@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Monieshop Analytics - Multiple Files</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Monieshop Multi-File Analytics Dashboard</h1>
+    
+    <div class="upload-section">
+        <input type="file" id="fileInput" accept=".txt" multiple>
+        <p>Upload multiple transaction files to see combined metrics</p>
+    </div>
+
+    <div id="metricsContainer" class="metrics-container">
+        <div id="individualMetrics"></div>
+        
+        <div class="combined-metrics">
+            <h2>Combined Results:</h2>
+            <div class="metric">
+                <strong>Total Sales Volume:</strong>
+                <span id="totalVolume"></span>
+            </div>
+            <div class="metric">
+                <strong>Total Sales Value:</strong>
+                <span id="totalValue"></span>
+            </div>
+            <div class="metric">
+                <strong>Most Sold Product ID (Overall):</strong>
+                <span id="topProduct"></span>
+            </div>
+            <div class="metric">
+                <strong>Monthly Top Staff:</strong>
+                <div id="monthlyStaff"></div>
+            </div>
+            <div class="metric">
+                <strong>Overall Peak Hour:</strong>
+                <span id="peakHour"></span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
